@@ -2,10 +2,7 @@ import { useState } from "react";
 import classes from "./NewPost.module.css";
 function NewPost() {
     const [CommentText, setCommentText] = useState("");
-    console.log(CommentText);
-    console.log(setCommentText);
     function commentTextHandler(event) {
-        console.log(event.target.value);
         setCommentText(event.target.value);
     }
     return (
